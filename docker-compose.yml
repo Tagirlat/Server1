@@ -10,11 +10,11 @@ services:
       - "./nginx.conf:/etc/nginx/nginx.conf"
 #    depends_on:
 #      -backend
-    network:
+    networks:
       -dev
 
   backend:
     build:
       context: ./backend
-      network:
+      networks:
         -dev
