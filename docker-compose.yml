@@ -16,5 +16,5 @@ services:
   backend:
     build:
       context: ./backend
-      networks:
+      network:
         -dev
