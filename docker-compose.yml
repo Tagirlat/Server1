@@ -16,11 +16,11 @@ services:
 
   backend:
     build:
-      context: ./backend
+      context: ./backend/src
     networks:
       - dev
   backend1:
     build:
-      context: ./backend
+      context: ./backend/src
     networks:
       - dev
