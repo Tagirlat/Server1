@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from backend.src.database import create_tables, delete_tables
@@ -16,6 +17,10 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(lifespan=lifespan)
 app.include_router(graves_router)
+
+if __name__ == "__main__":
+    uvicorn.run(app)
+
 
 
 

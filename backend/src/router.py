@@ -12,12 +12,12 @@ router = APIRouter(
 @router.post("")
 async def add_grave(
         grave: Annotated[SGraveAdd, Depends()],
-) ->SGraveId:
+) -> SGraveId:
     grave_id = await GravesRepository.add_one(grave)
-    return {"ok": True, "Grave_id": grave_id}
+    return {"ok": True, "grave_id": grave_id}
 
 
 @router.get("")
 async def get_graves() -> list[SGrave]:
-    graves= await GravesRepository.find_all()
+    graves = await GravesRepository.find_all()
     return graves
