@@ -12,15 +12,15 @@ services:
       - backend
       - backend1
     networks:
-      -dev
+      - dev
 
   backend:
     build:
       context: ./backend
-      networks:
-        -dev
+    networks:
+      - dev
   backend1:
     build:
       context: ./backend
-      networks:
-        -dev
+    networks:
+      - dev
