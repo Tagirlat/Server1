@@ -19,8 +19,8 @@ services:
       context: ./backend
     networks:
       - dev
-#  backend1:
-#    build:
-#      context: ./backend
-#    networks:
-#      - dev
+  backend1:
+    build:
+      context: ./backend
+    networks:
+      - dev
