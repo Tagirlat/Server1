@@ -9,4 +9,4 @@ COPY src src
 
 
 
-CMD ["python", "src/main.py"]
+CMD ["python", "backend/src/main.py"]
