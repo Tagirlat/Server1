@@ -1,7 +1,7 @@
 from typing import Annotated
 from fastapi import APIRouter, Depends
-from backend.src.repository import GravesRepository
-from backend.src.shemas import SGraveAdd, SGrave, SGraveId
+from repository import GravesRepository
+from shemas import SGraveAdd, SGrave, SGraveId
 
 router = APIRouter(
     prefix="/graves",

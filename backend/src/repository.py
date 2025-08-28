@@ -1,7 +1,7 @@
 from sqlalchemy import select
 
-from backend.src.database import new_session, GravesOrm
-from backend.src.shemas import SGraveAdd, SGrave
+from database import new_session, GravesOrm
+from shemas import SGraveAdd, SGrave
 
 
 class GravesRepository:

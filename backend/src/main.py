@@ -4,8 +4,8 @@ from contextlib import asynccontextmanager
 
 from starlette.middleware.cors import CORSMiddleware
 
-from backend.src.database import create_tables, delete_tables
-from backend.src.router import router as graves_router
+from database import create_tables, delete_tables
+from router import router as graves_router
 
 
 @asynccontextmanager
